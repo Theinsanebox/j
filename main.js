@@ -1,10 +1,10 @@
 let aname = prompt("Enter your name:");
+let chat = document.createElement('div');
 
     
 
 function passchat(){
-    let chat = document.createElement('div');
-    let x = document.querySelector('.chat-bar').value;
+        let x = document.querySelector('.chat-bar').value;
 
 
     chat.className = "Anelement"

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ChattingWebApp.css">
+    <link rel="icon" href="j(48).png">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="ChattingWebApp.js"></script>
+    <title>Privacy and Policy</title>
+</head>
+<body>
+    
+
+
+<form action="ChattingWebApp.htm" name="agreement">
+
+    <div class="pap">
+
+        <img src="j(240).png" class="imgpp">
+        <div class="TextMain"> Let's Talk </div>
+        
+        <table class="ppagree">
+            <tr>
+                <td>
+                    <input type="checkbox"  name="ppagree" id="ppagree" class="ppagreet">
+
+<script>
+
+function iagree(){
+
+let x = document.querySelector('.ppagree').checked;
+
+if(!(x)){
+  let con = confirm("I Agree the privacy and policy");
+    if(con == false){
+        alert("As your wish fucker!!!");
+    }
+}
+
+else{
+    let con2 = confirm("I Agree the privacy and policy");
+    if(con2 == false){
+        alert("As your wish fucker!!!");
+    }
+}
+
+}
+
+</script>
+
+                </td>
+                <td>
+                    <div class="ppagreet">
+                        <label for="ppagree">
+                            I Agree and Accept the Privacy and Policy of Lets talk
+                        </label>
+                    </div>
+                </td>
+            </tr>
+        
+            
+        </table>
+         <button class="prfbtn" id="dis" onclick="iagree()" style="margin-top: 100px;" > Continue </button> 
+        </div>
+
+</form>
+
+
+</body>
+</html>

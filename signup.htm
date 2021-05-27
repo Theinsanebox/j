@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
     <link rel="stylesheet" href="ChattingWebApp.css">
     <link rel="icon" href="j(48).png">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="ChattingWebApp.js"></script>
-    <title>Sign up</title>
 </head>
 <body>
     
-
     <div class="tblgin">
 
-        <form method="POST" action="ChattingWebApp.php">
+        <form method="POST" action="Privacy and Policy.htm">
         <table class="logintable">
 
             <tr>
@@ -25,12 +24,21 @@
             </tr>
             <tr>
                 <td>
-        <input type="text" class="liname  p-name" name="username" id="username">
+        <input type="text" class="suname  p-name" name="username" id="username">
                 </td>
             </tr>
         
         
-     
+        <tr>
+            <td>
+                <label for="email"> Email ID </label>
+            </td>
+        </tr>
+            <tr>
+                <td>
+        <input type="email" class="p-name" name="email" id="email">
+                </td>
+            </tr>
         
         
         
@@ -48,7 +56,16 @@
         
         
         
-         
+            <tr>
+                <td>
+                    <label for="rpassword"> Re-type Password </label>
+                 </td>
+            </tr>
+            <tr>
+                <td>
+        <input type="password" class="p-name" name="rpassword" id="rpassword">
+                </td>
+            </tr>
         
 <tr>
     <td>
@@ -57,30 +74,13 @@
 </tr>
             <tr>
                 <td>
-                    <input type="submit" value="Submit" class="prfbtn">
+                    <input onclick="chckpsd()" type="submit" value="Submit" class="prfbtn">
                 </td>
             </tr>
         </table>
         </form>
     </div>
 
-
-
 </body>
 </html>
 
-
-
-<!-- 
-<?php
-
-$username = $_POST['username'];
-$password = $_POST['password'];
-
-$connect = mysqli_connect('localhost','root','','letstalk');
-
-$query = "INSERT INTO `login`(`username`,`password`) VALUES('$username','$password')";
-
-$final = mysqli_query($connect,$query);
-
-?> -->
