@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="ChattingWebApp.css">
+    <link rel="icon" href="j(48).png">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="ChattingWebApp.js"></script>
+</head>
+<body>
+    
+    <div class="tblgin">
+
+        <form method="POST" action="Privacy and Policy.php">
+        <table class="logintable">
+
+            <tr>
+                <td>
+                    <label for="username"> Username </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+        <input type="text" class="suname  p-name" name="username" id="username">
+                </td>
+            </tr>
+        
+        
+        <tr>
+            <td>
+                <label for="email"> Email ID </label>
+            </td>
+        </tr>
+            <tr>
+                <td>
+        <input type="email" class="p-name" name="email" id="email">
+                </td>
+            </tr>
+        
+        
+        
+        
+            <tr>
+                <td>
+                    <label for="password"> Password </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+        <input type="password" class="p-name" name="password" id="password">
+                </td>
+            </tr>
+        
+        
+        
+            <tr>
+                <td>
+                    <label for="rpassword"> Re-type Password </label>
+                 </td>
+            </tr>
+            <tr>
+                <td>
+        <input type="password" class="p-name" name="rpassword" id="rpassword">
+                </td>
+            </tr>
+        
+<tr>
+    <td>
+        <br>
+    </td>
+</tr>
+            <tr>
+                <td>
+                    <input onclick="chckpsd()" type="submit" value="Submit" class="prfbtn">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+
+</body>
+</html>
+<!-- 
+<?php
+
+$username = $_POST['username'];
+$email = $_POST['email'];
+$password = $_POST['password'];
+$rpassword = $_POST['rpassword'];
+
+
+$connect = mysqli_connect('localhost','root','','letstalk');
+
+$query = "INSERT INTO `signup`(`username`,`email`,`password`,`rpassword`) VALUES('$username','$email','$password','$rpassword')";
+
+$final = mysqli_query($connect,$query);
+
+?> -->
