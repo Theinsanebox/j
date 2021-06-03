@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Text to Handwriting text </title>
+	<link rel="icon" href="j240.png">
+	<link href="https://jainilsoni1706.github.io/j/JASScss.css" rel="stylesheet">
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	</head>
+<body>
+<script>
+
+function conVERT(){
+	let first = document.querySelector('.first').value;
+	let second = document.querySelector('.second').value = first;
+	const flink = "https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata";
+	document.querySelector('.second').style.fontFamily = "Dawning of a New Day";
+
+}
+
+	
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+body{
+	padding: 0;
+	margin: 0;
+	background:#dd2d20;
+}	
+
+.container{
+	display:flex;
+	flex-direction:column;
+	justify-self: center;
+	align-items: center;
+}
+.jass-bar-item{
+	font-size:0.6cm;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+textarea:focus{
+	outline:none;
+}
+
+textarea{
+	width: 80vw;
+	height: 40vh;
+	border-radius:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:1cm;
+	font-family:unset;
+}
+
+.convert{
+	height:40px;
+	width: 120px;
+	border:none;
+	border-radius:20px;
+	cursor: pointer;
+	font-size:0.6cm;
+}
+
+button:focus{
+	outline:none;
+}
+
+.jass-bar{
+	font-family:arial;
+}
+
+</style>
+
+<div class="jass-bar jass-green">
+<h6  class="jass-bar-item jass-button"> Text to Handwriting </h6></div>
+</div>
+<div class="container">
+
+
+<textarea name="first" class="first" id="first"></textarea>
+<button class="convert" onclick="conVERT()"> Convert </button>
+<textarea name="second" class="second" id="second"></textarea>
+
+</div>
+
+</body>
+</html>
