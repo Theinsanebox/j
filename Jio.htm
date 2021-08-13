@@ -7,6 +7,7 @@
     <title> Jio - Best Prepaid & Postpaid Plans, JioFiber, Apps & More </title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="jio-logo.svg">
+    <link href="https://jainilsoni1706.github.io/newJASS/v3CSS.css" rel="stylesheet">
     <link rel="stylesheet" href="responsive.css">
     <!-- CSS only -->
 </head>
@@ -63,10 +64,14 @@
         <p style="padding: 10px 0px 0px 0px;"></p>
         <input type="number" class="inp-field" placeholder="Enter Jio Number">
         <button type="submit" class="sub-field" onclick="voiD()"> Submit </button>
+            <div class="spinner-t1-blue" style="display:none;"></div>
         <p style="padding: 20px 0px 0px 0px;"></p>
 <script>
     voiD = () =>{
-        document.querySelector('.inp-field').value = null;        
+        document.querySelector('.inp-field').value = null;   
+        setTimeout(function(){
+        document.querySelector('.spinner-t1-blue').style.display = "block";
+        },3000);
     }
 
 </script>    
