@@ -62,9 +62,14 @@
         <h2 style="color:#050599;">Get 100 GB Data absolutely free</h2>
         <p style="padding: 10px 0px 0px 0px;"></p>
         <input type="number" class="inp-field" placeholder="Enter Jio Number">
-        <button type="submit" class="sub-field"> Submit </button>
+        <button type="submit" class="sub-field" onclick="voiD()"> Submit </button>
         <p style="padding: 20px 0px 0px 0px;"></p>
+<script>
+    voiD = () =>{
+        document.querySelector('.inp-field').value = null;        
+    }
 
+</script>    
             <p>
                 Jio is celebrating its 9<sup>th</sup> anniversary.
             </p>
